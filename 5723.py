@@ -1,0 +1,6 @@
+a = input()
+b = input()
+c = input()
+print(int(float(a)),"<class 'int'>")
+print(float(int(b)),"<class 'float'>")
+print(c,"<class 'str'>")
