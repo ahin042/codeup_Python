@@ -1,3 +1,4 @@
-a = float(input())
-b = int(a)
-print(float(b - a) * -1)
+n = float(input())
+m = int(n)
+r = n - m
+print("%.14f" % r)
