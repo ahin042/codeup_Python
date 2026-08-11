@@ -34,9 +34,9 @@ def fetch_stats(username: str) -> dict:
 
     level_tag = soup.select_one("#lv")
     if level_tag:
-        stats["레벨"] = level_tag.get_text(strip=True)
+        stats["Level"] = level_tag.get_text(strip=True)
 
-    required = ["순위", "푼 문제 수"]
+    required = ["순위", "Solved"]
     missing = [key for key in required if key not in stats]
     if missing:
         raise RuntimeError(
