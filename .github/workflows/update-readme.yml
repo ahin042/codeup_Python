@@ -1,0 +1,33 @@
+name: Update CodeUp Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 매일 UTC 0시 = 한국시간(KST) 오전 9시
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Update stats
+        run: python update_stats.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md codeup-stats.svg
+          git diff --staged --quiet || git commit -m "docs: update CodeUp stats [skip ci]"
+          git push
