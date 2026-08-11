@@ -3,6 +3,3 @@
 
 <!-- CODEUP-STATS:START -->
 ![CodeUp Stats](codeup-stats.svg)
-
-_마지막 업데이트: 2026-08-11 11:49 KST_
-<!-- CODEUP-STATS:END -->
