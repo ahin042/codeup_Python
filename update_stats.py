@@ -75,15 +75,15 @@ def build_svg(username: str, stats: dict) -> str:
   <line x1="466.67" y1="50" x2="466.67" y2="212" stroke="#d0d7de" stroke-width="1.25"/>
 
   <text x="116.67" y="132" font-size="38" font-weight="800" fill="{GREEN}" text-anchor="middle">{solved}</text>
-  <text x="116.67" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">푼 문제 수</text>
+  <text x="116.67" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">SOLVED</text>
 
   <circle cx="350" cy="120" r="44" fill="none" stroke="{GREEN}" stroke-width="4"/>
   <circle cx="350" cy="69" r="4" fill="{GREEN}"/>
   <text x="350" y="132" font-size="32" font-weight="800" fill="{GREEN}" text-anchor="middle">{level}</text>
-  <text x="350" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">레벨</text>
+  <text x="350" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">LEVEL</text>
 
-  <text x="583.33" y="132" font-size="38" font-weight="800" fill="{GREEN}" text-anchor="middle">{rank_num}<tspan font-size="20">위</tspan></text>
-  <text x="583.33" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">순위</text>
+  <text x="583.33" y="132" font-size="38" font-weight="800" fill="{GREEN}" text-anchor="middle">{rank_num}</text>
+  <text x="583.33" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">RANK</text>
 </svg>
 '''
 
