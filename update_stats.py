@@ -19,7 +19,13 @@ GREEN = "#2da44e"
 
 def fetch_stats(username: str) -> dict:
     url = f"https://codeup.kr/userinfo.php?user={quote(username)}"
-    resp = requests.get(url, timeout=10)
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        )
+    }
+    resp = requests.get(url, headers=headers, timeout=10)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -34,9 +40,9 @@ def fetch_stats(username: str) -> dict:
 
     level_tag = soup.select_one("#lv")
     if level_tag:
-        stats["Level"] = level_tag.get_text(strip=True)
+        stats["레벨"] = level_tag.get_text(strip=True)
 
-    required = ["순위", "Solved"]
+    required = ["순위", "푼 문제 수"]
     missing = [key for key in required if key not in stats]
     if missing:
         raise RuntimeError(
@@ -88,7 +94,7 @@ def build_readme_block() -> str:
     return "\n".join(
         [
             START_MARKER,
-            f"![CodeUp Stats]({SVG_PATH})",
+            f'<img src="{SVG_PATH}" width="480" alt="CodeUp Stats" />',
             "",
             f"_마지막 업데이트: {now}_",
             END_MARKER,
