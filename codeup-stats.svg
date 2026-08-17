@@ -15,6 +15,6 @@
   <text x="350" y="132" font-size="32" font-weight="800" fill="#2da44e" text-anchor="middle">60</text>
   <text x="350" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">LEVEL</text>
 
-  <text x="583.33" y="132" font-size="38" font-weight="800" fill="#2da44e" text-anchor="middle">599</text>
+  <text x="583.33" y="132" font-size="38" font-weight="800" fill="#2da44e" text-anchor="middle">601</text>
   <text x="583.33" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">RANK</text>
 </svg>
