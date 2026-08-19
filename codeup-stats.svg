@@ -7,7 +7,7 @@
   <line x1="233.33" y1="50" x2="233.33" y2="212" stroke="#d0d7de" stroke-width="1.25"/>
   <line x1="466.67" y1="50" x2="466.67" y2="212" stroke="#d0d7de" stroke-width="1.25"/>
 
-  <text x="116.67" y="132" font-size="38" font-weight="800" fill="#2da44e" text-anchor="middle">600</text>
+  <text x="116.67" y="132" font-size="38" font-weight="800" fill="#2da44e" text-anchor="middle">608</text>
   <text x="116.67" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">SOLVED</text>
 
   <circle cx="350" cy="120" r="44" fill="none" stroke="#2da44e" stroke-width="4"/>
@@ -15,6 +15,6 @@
   <text x="350" y="132" font-size="32" font-weight="800" fill="#2da44e" text-anchor="middle">60</text>
   <text x="350" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">LEVEL</text>
 
-  <text x="583.33" y="132" font-size="38" font-weight="800" fill="#2da44e" text-anchor="middle">619</text>
+  <text x="583.33" y="132" font-size="38" font-weight="800" fill="#2da44e" text-anchor="middle">587</text>
   <text x="583.33" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">RANK</text>
 </svg>
