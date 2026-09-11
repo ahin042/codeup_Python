@@ -4,5 +4,5 @@
 <!-- CODEUP-STATS:START -->
 <img src="codeup-stats.svg" width="480" alt="CodeUp Stats" />
 
-_마지막 업데이트: 2026-09-10 11:00 KST_
+_마지막 업데이트: 2026-09-11 10:58 KST_
 <!-- CODEUP-STATS:END -->
