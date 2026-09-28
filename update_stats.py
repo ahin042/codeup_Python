@@ -14,7 +14,6 @@ SVG_PATH = "codeup-stats.svg"
 START_MARKER = "<!-- CODEUP-STATS:START -->"
 END_MARKER = "<!-- CODEUP-STATS:END -->"
 
-GREEN = "#2da44e"
 
 
 def fetch_stats(username: str) -> dict:
@@ -74,16 +73,14 @@ def build_svg(username: str, stats: dict) -> str:
   <line x1="233.33" y1="50" x2="233.33" y2="212" stroke="#d0d7de" stroke-width="1.25"/>
   <line x1="466.67" y1="50" x2="466.67" y2="212" stroke="#d0d7de" stroke-width="1.25"/>
 
-  <text x="116.67" y="132" font-size="38" font-weight="800" fill="{GREEN}" text-anchor="middle">{solved}</text>
-  <text x="116.67" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">SOLVED</text>
+  <text x="116.67" y="132" font-size="38" font-weight="800" text-anchor="middle">{solved}</text>
+  <text x="116.67" y="200" font-size="13" font-weight="600" text-anchor="middle" letter-spacing="1.5">SOLVED</text>
 
-  <circle cx="350" cy="120" r="44" fill="none" stroke="{GREEN}" stroke-width="4"/>
-  <circle cx="350" cy="69" r="4" fill="{GREEN}"/>
-  <text x="350" y="132" font-size="32" font-weight="800" fill="{GREEN}" text-anchor="middle">{level}</text>
-  <text x="350" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">LEVEL</text>
+  <text x="350" y="132" font-size="38" font-weight="800" text-anchor="middle">{level}</text>
+  <text x="350" y="200" font-size="13" font-weight="600" text-anchor="middle" letter-spacing="1.5">LEVEL</text>
 
-  <text x="583.33" y="132" font-size="38" font-weight="800" fill="{GREEN}" text-anchor="middle">{rank_num}</text>
-  <text x="583.33" y="200" font-size="13" font-weight="600" fill="#57606a" text-anchor="middle" letter-spacing="1.5">RANK</text>
+  <text x="583.33" y="132" font-size="38" font-weight="800" text-anchor="middle">{rank_num}</text>
+  <text x="583.33" y="200" font-size="13" font-weight="600" text-anchor="middle" letter-spacing="1.5">RANK</text>
 </svg>
 '''
 
@@ -96,7 +93,7 @@ def build_readme_block() -> str:
             START_MARKER,
             f'<img src="{SVG_PATH}" width="480" alt="CodeUp Stats" />',
             "",
-            f"_마지막 업데이트: {now}_",
+            f"`Last Update : {now}`",
             END_MARKER,
         ]
     )
