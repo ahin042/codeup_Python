@@ -6,7 +6,7 @@ from urllib.parse import quote
 import requests
 from bs4 import BeautifulSoup
 
-# 여기에 본인 CodeUp 아이디를 넣으세요 (예: fcode)
+# 여기에 본인 CodeUp 아이디
 USERNAME = "fcode"
 
 README_PATH = "README.md"
