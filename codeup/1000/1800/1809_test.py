@@ -16,4 +16,4 @@ while n != b - 1 :
             r *= 3
             r += 1
     c = r
-print(r,c) # 진짜 뭔 문제가 더럽네
+print(r,c)
